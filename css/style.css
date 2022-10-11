@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(29, 33, 36);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.container{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(12, 12, 12);
+    transform: translate(400px, 200px);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.input-container{
+    width: 280px;
+    position: relative;
+    margin: 20px;
+    left: 50px;
+}
+
+.label{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    transition: all 0.2s;
+    padding: 0.2px;
+    z-index: 1;
+    color: #b3b3b3;
+    font-size: 20px;
+}
+
+.reciever{
+    margin: 10px;
+    background-color: rgb(37, 35, 35);
+    height: 50px;
+    width: auto;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    transition: all .3s;
+}
+
+.label::before{
+    content: "";
+    height: 5px;
+    background-color: #272530;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+
+.reciever:focus{
+    border: 2px solid #fff;
+}
+
+.reciever:focus + .label, .filled{
+    top: -10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.reciever::placeholder{
+    font-size: 16px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.reciever:focus::placeholder{
+    opacity: 1;
+    animation: 0.2s;
+}
+
+button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+
+
+    margin: 10px;
+    padding: 15px;
+    background: crimson;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+button:hover{
+    opacity: 0.6;
+}
+
+
+#feedback{
+    background-color: rgb(37, 35, 35);
+    width: 250px;
+    height: 40px;
+    color: #fff;
+    border-radius: 10px;
+    transform: translate(90px, 0px);
+    font-size: 20px;
+}
+
+#msg1, #msg2{
+    color: #fff;
+    margin-top: 10px;
+
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(300px, 150px);
+        
+    }
+}
+
+@media screen and (max-width: 950px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(100px, 250px);
+        
+    }
+}
+
+@media screen and (max-width: 940px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(200px, 80px);
+       width: 450px;
+        
+    }
+}
+
+@media screen and (max-width: 920px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(295px, 250px);
+        
+    }
+}
+
+@media screen and (max-width: 912px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(200px, 300px);
+        
+    }
+}
+
+@media screen and (max-width: 860px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(270px, 100px);
+        
+    }
+}
+
+@media screen and (max-width: 820px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(160px, 250px);
+        
+    }
+}
+
+@media screen and (max-width: 790px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(220px, 100px);
+        
+    }
+}
+
+@media screen and (max-width: 770px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(140px, 200px);
+        
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(190px, 100px);
+       width: 450px;
+        
+    }
+}
+
+@media screen and (max-width: 670px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(170px, 100px);
+       width: 450px;
+        
+    }
+}
+
+@media screen and (max-width: 615px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(80px, 100px);
+       width: 450px;
+        
+    }
+}
+
+@media screen and (max-width: 540px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(40px, 100px);
+       width: 450px;
+        
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body{
+        box-sizing: border-box;
+        display: grid;
+        overflow: hidden;
+    }
+    .container{
+       transform: translate(00px, 200px);
+        
+    }
+}
